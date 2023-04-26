@@ -55,6 +55,7 @@ public class Alumno {
     { if (!materias.containsKey(m.getIdmateria()))
     {
     materias.put(m.getIdmateria(),m);   
+    JOptionPane.showMessageDialog(null, "Inscripcion Exitosa");
     }
     else
     {JOptionPane.showMessageDialog(null,"ya esta inscripto a esa materia");   }

@@ -169,7 +169,7 @@ public class Vista2 extends javax.swing.JFrame {
         String apellido=jTapellidoalumno.getText();
         Alumno alumno=new Alumno(legajo,nombre,apellido);
         Logica.setAlumnos(alumno);
-        JOptionPane.showMessageDialog(null, "Tiene que cargarle materias al alumno ");
+        
         jTnombrealumno.setText("");
         jTapellidoalumno.setText("");
         jTlegajoalumno.setText("");

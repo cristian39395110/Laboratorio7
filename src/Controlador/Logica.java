@@ -35,6 +35,7 @@ public class Logica {
 
     public static  void setAlumnos(Alumno alumnoso) {
         alumnos.add(alumnoso);
+        JOptionPane.showMessageDialog(null, "Alumno Cargado");
     }
     public static void cargaDatos(String nombre,String materia )
     {boolean ver=false;
@@ -50,7 +51,7 @@ public class Logica {
              {
               alumnos.get(i).agregarMateria(materias.get(j));
               ver=true;
-                 JOptionPane.showMessageDialog(null, "Inscripcion Exitosa");
+                 
              }
              j++;
           }

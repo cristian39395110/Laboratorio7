@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package laboratorio7;
+package Modelo;
 
+import Vista.Vista3;
 import java.util.HashMap;
 import java.util.Map;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -55,7 +57,7 @@ public class Alumno {
     materias.put(m.getIdmateria(),m);   
     }
     else
-    {System.out.println("Ya esta inscripto a:  "+m.getNombre());   }
+    {JOptionPane.showMessageDialog(null,"ya esta inscripto a esa materia");   }
     }
     public int  cantidadMaterias()
     {

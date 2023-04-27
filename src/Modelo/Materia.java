@@ -6,7 +6,6 @@
 package Modelo;
 
 /**
- *
  * @author Ruben
  */
 public class Materia {
@@ -44,6 +43,5 @@ public class Materia {
         this.anio = anio;
     }
 
-   
-    
+
 }

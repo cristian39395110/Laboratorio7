@@ -6,19 +6,19 @@
 package Modelo;
 
 import Vista.Vista3;
+
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
 
 /**
- *
  * @author Ruben
  */
 public class Alumno {
     private int legajo;
     private String apellido;
     private String nombre;
-     private HashMap<Integer, Materia> materias;
+    private HashMap<Integer, Materia> materias;
 
     public Alumno(int legajo, String apellido, String nombre) {
         this.legajo = legajo;
@@ -50,19 +50,18 @@ public class Alumno {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
-    public void agregarMateria(Materia m)
-    { if (!materias.containsKey(m.getIdmateria()))
-    {
-    materias.put(m.getIdmateria(),m);   
-    JOptionPane.showMessageDialog(null, "Inscripcion Exitosa");
+
+    public void agregarMateria(Materia m) {
+        if (!materias.containsKey(m.getIdmateria())) {
+            materias.put(m.getIdmateria(), m);
+            JOptionPane.showMessageDialog(null, "Inscripcion Exitosa");
+        } else {
+            JOptionPane.showMessageDialog(null, "ya esta inscripto a esa materia");
+        }
     }
-    else
-    {JOptionPane.showMessageDialog(null,"ya esta inscripto a esa materia");   }
-    }
-    public int  cantidadMaterias()
-    {
-       return materias.size();
-    
+
+    public int cantidadMaterias() {
+        return materias.size();
+
     }
 }

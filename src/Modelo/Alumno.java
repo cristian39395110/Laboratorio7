@@ -54,7 +54,12 @@ public class Alumno {
     public void agregarMateria(Materia m) {
         if (!materias.containsKey(m.getIdmateria())) {
             materias.put(m.getIdmateria(), m);
-            JOptionPane.showMessageDialog(null, "Inscripcion Exitosa");
+            int contador=0;
+            for (Map.Entry<Integer, Materia> entry : materias.entrySet()) {
+               contador++;
+                
+            }
+            JOptionPane.showMessageDialog(null, "Inscripcion Exitosa-- Alumno inscripto en "+contador+" materias");
         } else {
             JOptionPane.showMessageDialog(null, "ya esta inscripto a esa materia");
         }
